@@ -24,12 +24,12 @@
 
 * Built using .Net Core 2.0 and EntityFrameowrkCore 2.0
 * Uses **Repository Pattern** to separate database and API concerns.
-* A generic Reposity service is used, to handle current and future database actions without any further changes necessary.
-* `Code first` approach is used with EntityFrameworkCore 2.0
-* A `BaseModel` class is used for the Models (Code First App) to cover the common table attributes.
+* A generic Reposity service is used to handle current and future database actions without any further changes necessary.
+* `Code First` approach is used with EntityFrameworkCore 2.0
+* A `BaseModel` class is used for the Models (Code First Approach) to cover the common table attributes.
 * `DataAnnotations` are used on the Columns/Properties to enhance validation and meaning to the tables.
 * All the `Controllers` use Dependency Injection to get the Repository concrete classes.
-* The Dependency Injection is chained further to instantiate the `DBContext` also in the Reository Service.
+* The Dependency Injection is chained further to instantiate the `DBContext` also in the Repository Service.
 * The ConnectionString is picked up from the Configuration defined in the `appsettings.json` file.
 * The `Controller` actions are implemented asynchronously using the **async/await** operators.
 * Model Validation is implemented using a `FilterAttribute` class. This is a cross-cutting requirement for the project.
