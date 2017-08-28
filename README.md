@@ -2,7 +2,7 @@
 **yum-recipes-api** is a simple web application built using :
 * ASP.NET Core 2.0 WebApi - *to handle the server stuff.*
 * EntityFrameworkCore 2.0
-* Sqlite - *used for data storage.*
+* [Sqlite](https://www.sqlite.org/index.html) - *used for data storage.*
 * This app is the server-api end for the [yup-recipes](https://github.com/mario-christopher/yup-recipes) frontend (TBD).
 
 
